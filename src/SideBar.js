@@ -1,7 +1,7 @@
 import React from "react"
 import { AppRegistry, Image, StatusBar } from "react-native"
 import { Container, Content, Text, List, ListItem } from "native-base"
-const routes = ["Home", "Facility", "Dinning", "Recreation", "Map", "Policies", "Contact"]
+const routes = ["Home", "Recreation", "Map"]
 
 export default class SideBar extends React.Component {
   render() {
@@ -9,12 +9,13 @@ export default class SideBar extends React.Component {
       <Container>
         <Content>
           <Image
-            source={require('./drawer-cover.png')}
+            source={require('./drawer-cover.jpg')}
+            resizeMode="contain"
             style={{
-              height: 120,
+              height: undefined,
+              width: undefined,
               alignSelf: "stretch",
-              justifyContent: "center",
-              alignItems: "center"
+              //flex:1
             }}/>
           <List
             dataArray={routes}
