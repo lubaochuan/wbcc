@@ -12,7 +12,9 @@ export default class MapScreen extends React.Component {
       <Container>
         <Header>
           <Left>
-            <Button transparent onPress={() => this.props.navigation.goBack()}>
+            <Button transparent onPress={() => {
+              console.log("back button pressed")
+              this.props.navigation.goBack()}}>
               <Icon name="arrow-back" />
             </Button>
           </Left>
@@ -23,7 +25,6 @@ export default class MapScreen extends React.Component {
         </Header>
         <View style={{flex: 1}}>
         <MapView
-          ref={map => this.map = map}
           initialRegion={params.initialRegion}
           showsUserLocation={true}
           style={{flex: 1}}
@@ -37,9 +38,6 @@ export default class MapScreen extends React.Component {
           </MapView.Marker>)}
         </MapView>
         </View>
-        <Button transparent onPress={() => this.props.navigation.goBack()}>
-          <Icon name="arrow-back" />
-        </Button>
       </Container>)
   }
 }
