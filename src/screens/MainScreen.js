@@ -55,17 +55,21 @@ export default class MainScreen extends React.Component {
           <Button iconLeft full
             style={{ marginTop: 10 }}
             onPress={() => {
-              let routes = screen.links.map((obj)=>obj.route)
-              //console.log(routes)
-              let linked_screens = screens.filter((obj)=>routes.includes(obj.route))
-              let markers_arrays = linked_screens.map((obj)=>obj.map.markers)
-              let markers = [].concat.apply([], markers_arrays)
-              //console.log(markers)
-              let initialRegion = linked_screens[0].map.initialRegion
-              //console.log(initialRegion)
-              let map = {initialRegion, markers}
-              console.log(JSON.stringify(map))
-              this.props.navigation.navigate("MapScreen", map)
+              if(screen.map){
+                this.props.navigation.navigate("MapScreen", screen.map)
+              }else{
+                let routes = screen.links.map((obj)=>obj.route)
+                //console.log(routes)
+                let linked_screens = screens.filter((obj)=>routes.includes(obj.route))
+                let markers_arrays = linked_screens.map((obj)=>obj.map.markers)
+                let markers = [].concat.apply([], markers_arrays)
+                //console.log(markers)
+                let initialRegion = linked_screens[0].map.initialRegion
+                //console.log(initialRegion)
+                let map = {initialRegion, markers}
+                console.log(JSON.stringify(map))
+                this.props.navigation.navigate("MapScreen", map)
+              }
             }}>
             <Icon type="MaterialCommunityIcons" active name="google-maps" />
             <Text>Show on Map</Text>

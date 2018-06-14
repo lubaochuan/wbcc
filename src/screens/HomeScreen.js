@@ -28,10 +28,10 @@ export default class HomeScreen extends React.Component {
             source={require('../../assets/cover.jpg')}/>
           {screen.items.map((item, index) => (
           <Card key={index}>
-            <CardItem header bordered>
+            <CardItem header>
               <Text>{item.header}</Text>
             </CardItem>
-            <CardItem bordered>
+            <CardItem>
               <Body><Text>{item.body}</Text></Body>
             </CardItem>
           </Card>))}

@@ -36,19 +36,20 @@ export default class DetailScreen extends React.Component {
           {screen.items != null &&
             screen.items.map((item, index) => (
             <Card key={index}>
-              <CardItem header>
+              <CardItem header bordered>
                 <Text>{item.header}</Text>
               </CardItem>
               <CardItem>
                 <Body><Text>{item.body}</Text></Body>
               </CardItem>
             </Card>))}
+          {screen.map != null &&
           <Button iconLeft full
             style={{ marginTop: 10 }}
             onPress={() => this.props.navigation.navigate("MapScreen", screen.map)}>
             <Icon type="MaterialCommunityIcons" active name="google-maps" />
             <Text>Show on Map</Text>
-          </Button>))}
+          </Button>}
         </Content>
       </Container>
     )

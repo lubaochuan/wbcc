@@ -4,9 +4,79 @@ export const screens = [
     title: 'Home',
     image: 'cover.jpg',
     items:[
-      {header:'Welcome', body:'Windermere Baptist Conference Center provides a Christian setting in which life changing experiences may occur.'}],
+      {header:'Welcome to Windermere Baptist Conference Center', body:'We provide a Christian setting in which life changing experiences may occur.'}],
     links:[
-      {text:'Recreation', route:'Recreation'}]
+      {text:'Accommodations', route:'Accommodations'},
+      {text:'Dining', route:'Dining'},
+      {text:'Recreation', route:'Recreation'},
+      {text:'Guest Policies', route:'Policies'},
+      {text:'Contact Us', route:'Contact'}
+    ]
+  },{
+    route: 'Accommodations',
+    title: 'Accommodations',
+    image: 'https://www.windermereusa.org/wp-content/uploads/2014/02/362-363-817x408.jpg',
+    items:[
+      {header:'Deluxe, Standard, and Economy Lodging', body:'Windermere offers a wide range of lodging options to meet the variety of needs of our guests.  All lodging and conference facilities are air conditioned and heated.  All lodging has bathroom facilities within the building and handicap accessible lodging is available as well.'},
+      {header:'Conference Spaces', body:"We also offer a broad range of conference space options! \nContact us or visit our site for more information!"}],
+    links:[
+      {text:'Wilderness Creek Dorms', route:'Wilderness Creek Dorms'}]
+  },{
+    route: 'Wilderness Creek Dorms',
+    title: 'Wilderness Creek Dorms',
+    image: 'https://www.windermereusa.org/wp-content/uploads/2013/09/LakeViewfront1-905x452.jpg',
+    items:[
+      {header:'Wilderness Creek Dorms', body:'Set upon the beautiful Lake of the Ozarks, our Wideman Lake View Lodge offers 36 rooms with  4 handicap rooms, each sleeping 6 (1 queen and 2 sets of bunks).'}],
+    map:{
+      initialRegion: {
+        latitude: 38.033790,
+        longitude: -92.847700,
+        latitudeDelta: 0.0080,
+        longitudeDelta: 0.0080},
+      markers:[
+        { title: "Wilderness Creek Dorms",
+          description: "",
+          coordinate:{
+            latitude: 38.033790,
+            longitude: -92.847700}}]}
+  },{
+    route: 'Dining',
+    title: 'Dining',
+    image: 'https://www.windermereusa.org/wp-content/uploads/2013/09/LakeViewfront1-905x452.jpg',
+    items:[
+      {header:'Address', body:
+      "1650 Koehler Dr.\nRoach, MO 65787"},
+      {header:'Buffet Style', body:"Buffet dining includes an entree, several side dishes, a soup of the day, a salad bar with a wide variety of toppings and dressings, assorted desserts, and beverage center (juices, coffee, tea, and soda) at lunch and dinner. Meals are served in the main dining room. Breakfasts include hot breakfast entrees, side dishes, beverage center, plus assorted cereals, yogurt, & fruit."},
+      {header:'Catering Services', body:"We want to help you get the most out of your retreat fellowship times. Let us handle preparing snacks and all the set-up and clean up associated so you can focus on ministering to your attendees, so don't forget about our extensive snack list! One of our more popular events is a breakfast brunch for your group served in a separate section of our dining hall. Whether you're a local group looking for catering services or staying in our lodging, we can meet your catering need."},
+      {header:'Lakeside Grill', body:"The Lakeside Grill is serving up items hot off the grill, appetizers, and cool treats from the ice cream freezer. \nGroups can arrange parties, snack packages, or times for the cafe to be open for individual pay out of pocket orders. \nThe Lakeside Grill's fun atmosphere create a great opportunity for guests to build relationships. \nThe grill and Marina patio is a great spot to take in a movie with your whole group in a laid back, casual setting. It works well for small group meetings and fellowship times. \nThe grill is also equipped with WiFi!"}],
+     map:{
+        initialRegion: {
+          latitude: 38.0326914,
+          longitude: -92.8380096,
+          latitudeDelta: 0.0080,
+          longitudeDelta: 0.0080,
+        },
+        markers: [
+          { title: "Dining Hall",
+            coordinate: {
+              latitude:38.032770,
+              longitude:-92.837198,
+            },
+          },{
+            title: "Snack Shack",
+            coordinate: {
+              latitude: 38.033315,
+              longitude: -92.837141,
+            }}]}
+  },{
+    route: 'Contact',
+    title: 'Contact Us',
+    image: 'https://www.windermereusa.org/wp-content/uploads/2013/09/LakeViewfront1-905x452.jpg',
+    items:[
+      {header:'Address', body:
+      "1650 Koehler Dr.\nRoach, MO 65787"},
+      {header:'Phone', body:"573-346-5200"},
+      {header:'Email', body:"sales@windermereusa.org"}]
   },{
     route: 'Recreation',
     title: 'Recreation',
