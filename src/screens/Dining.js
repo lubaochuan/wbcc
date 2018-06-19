@@ -7,7 +7,7 @@ import { screens, findScreenByRoute } from '../../data/contents.js'
 const dimensions = Dimensions.get('window')
 const imageHeight = dimensions.height/5
 
-export default class dining extends React.Component {
+export default class Dining extends React.Component {
   render() {
     const {params} = this.props.navigation.state
     const screen = params
