@@ -9,7 +9,7 @@ export const screens = [
       {text:'Accommodations', route:'Accommodations'},
       {text:'Dining', route:'Dining'},
       {text:'Recreation', route:'Recreation'},
-      {text: 'Campus Map', route:'CampusMap'},
+      {text:'Campus Map', route:'CampusMap'},
       {text:'Guest Policies', route:'Policies'},
       {text:'Contact Us', route:'Contact'}
     ]
@@ -181,7 +181,7 @@ export const screens = [
       {text:'The Splash', route:'Splash'},
       {text:'The Marina', route:'Marina'}]
   }, {
-    route: 'ContactUS',
+    route: 'Contact',
     title: 'Contact Us',
     image: 'contact.jpg',
     items:[
@@ -309,6 +309,31 @@ export const screens = [
           coordinate: {
             latitude: 38.0332049,
             longitude: -92.8356746}}]}
+  },{
+    route: 'Policies',
+    title: 'Policies',
+    image: 'policy.jpg',
+    items: [
+      {header:'Guest Rules and Policies', body:'The policies relate to individual responsibilities. The Conference Coordinator is responsible for communicating and maintaining compliance with these policies within their group.'},
+      {header:'Alcohol', body:'Use or possession of alcoholic beverages or illicit drugs is forbidden. Guests in non-compliance will be asked to leave, will forfeit any right to refund, and may jeopardize the invitation of their group to return to Windermere.'},
+      {header:'Campfire', body:'Campfires should be scheduled in advance of your conference. Campfires are located in the Vesper area, Cedar Grove, Lake View, and Spring Valley. Windermere can set the firewood; however, the groups will be responsible for lighting the fire. Groups may also provide their own firewood if approved by the Account Manager. Contact the Account Manager ot make arrangements.'},
+      {header:'Curfew', body:'There is a 12:30 AM curfew. All guests, including sponsors, need to be in their rooms by this time.\nQuiet time begins at 12:00 AM.'},
+      {header:'Dress', body:"Clothing will be modest and appropriate for a family atmosphere. Shorts, skirts, or dresses that are extremely short are inappropriate. All females' swimsuits MUST BE ONE PIECE or have a cover worn over them at all times. All males' swimsuits must be trunk type; no Speedo type swimsuits are allowed. Violations of this dress policy by guests will be addressed through consultation with group's leader(s)."},
+      {header:'Firearms', body:'Firearms and fireworks of any nature are forbidden.'},
+      {header:'Food & Drink', body:'No food or drink is allowed inside of Harding Auditorium or the Gymnasium of the Multi-Purpose Building.'},
+      {header:'Lake/Swimming', body:'NO SWIMMING IN THE LAKE EXCEPT IN DESIGNATED SWIMMING AREAS. The ski beach is to facilitate skiers in having easy access to the water. Skiers using this area should be cautious.'},
+      {header:'Lost & Found', body:'Items that are found in the buildings or on the grounds are placed in lost-and-found. Please contact the Front Desk concerning lost and found items.'},
+      {header:'Medical', body:"Windermere staff must be notified of all medical incidents that occur on the premises.\nFor secondary reinbursement by Windermere for any medical incidents, please contact the Account Manager. The guest is responsible for providing evidence of any and all applicable insurance to the medical provider. Once the guest's insurance company has paid the medical provider, the guest must provide an explanation of benefits from the insurance company to Windermere."},
+      {header:'Mail', body:"Mail is available for pickup after 12:00 PM. All mail needs to include the guest's name and name of the camp/conference the guest is attending. Any mail received after the group ahs departed will be marked to return to sender."},
+      {header:'Pets', body:"ABSOLUTELY NO PETS ARE ALLOWED ON THE GROUNDS, except within the RV Park boundaries. Guests having pets outside the RV Park boundaries will be asked to take their pets off site or vacate the grounds."},
+      {header:'Photography', body:"Please note that a Windermere Staff or photographer may be on site taking pictures of events and activities at Windermere. These photographs may be used on our web site, social media, and in promotional materials."},
+      {header:'Reservations', body:"If individuals and/or individual families are to make their own reservations for this event, then Windermere Reservations will require an individual/family deposit to be made consisting of $10.00 per night per person or per family for each unit reserved. Cancellation 30 or more days prior to arrival date will result in a full refund of the individual deposit; cancellation less than 30 days prior will result in forfeiture of the individual deposit. No reservations for a conference will be processed until we have received the signed contract and deposit.\nReservations can only be made or modified by the guest occupying the lodging room. Exceptions to the policy will only be made if the person requesting the change/room is paying for the room."},
+      {header:'Rollerblades', body:"Rollerblades, skateboarding, bikes, and scooters are allowed on the pool side of the lake only. Due to high traffic, non are allowed on teh office side of the lake. Full pads and helmet must be worn. Windermere Staff may ask guests to refrain from the use of the above mentioned if being used in an unsafe manner."},
+      {header:'RVs', body:"Campers, motor homes, and trailers may not be used as sleeping quarters when parked anywhere other than in the RV lots. No automobile (car, truck, van, etc.) may be used as sleeping quarters."},
+      {header:'Smoking', body:"Smoking is not permitted within any Windermere buildings. Guests 18 or older are permitted to smoke outside. Violation of this policy will result in a charge."},
+      {header:'Trash', body:"There will be an additional cleaning charge resulting from any trash left in hallways or lobby areas of campus. There will be no charge for trash found in designated trash receptacles."},
+      {header:'Vehicles', body:"Observe speed limit signs. All passengers must be inside the vehicle in accordance with state highway traffic laws."},
+    ]
   }
 ]
 
