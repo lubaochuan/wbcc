@@ -1,10 +1,13 @@
 import React from "react"
-import { Dimensions } from "react-native"
+import { Image, Dimensions } from "react-native"
 import { Container, Card, CardItem, Body, Content, Header, Left, Right, Icon,
   Title, Button, Text } from "native-base"
-import {screens} from '../../data/contents.js'
+import { screens, findScreenByRoute } from '../../data/contents.js'
 
-export default class DetailScreen extends React.Component {
+const dimensions = Dimensions.get('window')
+const imageHeight = dimensions.height/5
+
+export default class dining extends React.Component {
   render() {
     const {params} = this.props.navigation.state
     const screen = params
@@ -23,23 +26,30 @@ export default class DetailScreen extends React.Component {
           <Right />
         </Header>
         <Content>
+          <Image
+            resizeMode={'cover'}
+            style={{width: '100%', height: imageHeight}}
+            source={require('../../assets/dining.jpg')}/>
           {screen.items != null &&
             screen.items.map((item, index) => (
             <Card key={index}>
-              <CardItem header bordered>
+              <CardItem header>
                 <Text>{item.header}</Text>
               </CardItem>
               <CardItem>
                 <Body><Text>{item.body}</Text></Body>
               </CardItem>
             </Card>))}
-          {screen.map != null &&
           <Button iconLeft full
             style={{ marginTop: 10 }}
-            onPress={() => this.props.navigation.navigate("MapScreen", screen.map)}>
+            onPress={() => {
+              if(screen.map){
+                this.props.navigation.navigate("MapScreen", screen.map)
+              }
+            }}>
             <Icon type="MaterialCommunityIcons" active name="google-maps" />
             <Text>Show on Map</Text>
-          </Button>}
+          </Button>))}
         </Content>
       </Container>
     )

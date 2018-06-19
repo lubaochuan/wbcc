@@ -9,44 +9,144 @@ export const screens = [
       {text:'Accommodations', route:'Accommodations'},
       {text:'Dining', route:'Dining'},
       {text:'Recreation', route:'Recreation'},
+      {text: 'Campus Map', route:'CampusMap'},
       {text:'Guest Policies', route:'Policies'},
       {text:'Contact Us', route:'Contact'}
     ]
   },{
     route: 'Accommodations',
     title: 'Accommodations',
-    image: 'https://www.windermereusa.org/wp-content/uploads/2014/02/362-363-817x408.jpg',
+    image: 'accomodations.jpg',
     items:[
       {header:'Deluxe, Standard, and Economy Lodging', body:'Windermere offers a wide range of lodging options to meet the variety of needs of our guests.  All lodging and conference facilities are air conditioned and heated.  All lodging has bathroom facilities within the building and handicap accessible lodging is available as well.'},
       {header:'Conference Spaces', body:"We also offer a broad range of conference space options! \nContact us or visit our site for more information!"}],
-    links:[
-      {text:'Wilderness Creek Dorms', route:'Wilderness Creek Dorms'}]
-  },{
-    route: 'Wilderness Creek Dorms',
-    title: 'Wilderness Creek Dorms',
-    image: 'https://www.windermereusa.org/wp-content/uploads/2013/09/LakeViewfront1-905x452.jpg',
-    items:[
-      {header:'Wilderness Creek Dorms', body:'Set upon the beautiful Lake of the Ozarks, our Wideman Lake View Lodge offers 36 rooms with  4 handicap rooms, each sleeping 6 (1 queen and 2 sets of bunks).'}],
-    map:{
+    map: {
       initialRegion: {
-        latitude: 38.033790,
-        longitude: -92.847700,
+        latitude: 38.0326914,
+        longitude: -92.8380096,
         latitudeDelta: 0.0080,
-        longitudeDelta: 0.0080},
-      markers:[
+        longitudeDelta: 0.0080,
+      },
+      markers: [
         { title: "Wilderness Creek Dorms",
-          description: "",
-          coordinate:{
+          coordinate: {
             latitude: 38.033790,
-            longitude: -92.847700}}]}
-  },{
+            longitude: -92.847700}},
+        {
+          title: "Tent Area",
+          coordinate: {
+            latitude: 38.028769,
+            longitude: -92.838665}},
+        {
+          title: "Motel",
+          coordinate: {
+            latitude:38.032044,
+            longitude:-92.837657}},
+        {
+          title: "Spring Valley Dorms",
+          coordinate: {
+            latitude: 38.035132,
+            longitude: -92.843614}},
+        {
+          title: "Cedar Grove Cottages",
+          coordinate: {
+            latitude: 38.030025,
+            longitude: -92.838489}},
+        {
+          title: "Family Cabins",
+          coordinate: {
+            latitude: 38.035371,
+            longitude: -92.834923}},
+        {
+          title: "Lake View Dorms",
+          coordinate: {
+            latitude: 38.035880,
+            longitude: -92.837674}},
+        {
+          title: "RV Park",
+          coordinate: {
+            latitude: 38.028756,
+            longitude: -92.839624}},
+        {
+          title: "Lake View Lodge",
+          coordinate: {
+            latitude: 38.035171,
+            longitude: -92.839172}},
+        {
+          title: "Lake View Conf. Bldg.",
+          coordinate: {
+            latitude: 38.035347,
+            longitude: -92.839868}},
+        {
+          title: "Deer Ridge Conf. Bldg.",
+          coordinate: {
+            latitude: 38.035360,
+            longitude: -92.841024}},
+        {
+          title: "Koehler Lodge",
+          coordinate: {
+            latitude: 38.034747,
+            longitude: -92.842267}},
+        {
+          title: "Dogwood Lodge/Murdock Conf. Room",
+          coordinate: {
+            latitude: 38.037217,
+            longitude: -92.839466}},
+        {
+          title: "Red Bud Lodge",
+          coordinate: {
+            latitude: 38.036645,
+            longitude: -92.839375}},
+        {
+          title: "Wilderness Creek Auditorium",
+          coordinate: {
+            latitude: 38.034712,
+            longitude: -92.845063}},
+        {
+          title: "Multi-purpose Building",
+          coordinate: {
+            latitude: 38.030493,
+            longitude: -92.837084}},
+        {
+          title: "Harding Auditorium",
+          coordinate: {
+            latitude:38.031735,
+            longitude:-92.837165}},
+        {
+          title: "Spring Valley Auditorium",
+          coordinate: {
+            latitude:38.034305,
+            longitude: -92.842864}},
+        {
+          title: "Cedar Grove Conference Building #1",
+          coordinate: {
+            latitude:38.029017,
+            longitude: -92.839228}},
+        {
+          title: "Cedar Grove Conference Building #2",
+          coordinate: {
+            latitude: 38.029958,
+            longitude: -92.839436}},
+        {
+          title: "Educational Building",
+            coordinate: {
+              latitude: 38.030917,
+              longitude: -92.838289}},
+        {
+          title: "Prayer Chapel",
+          coordinate: {
+            latitude:38.032134,
+            longitude: -92.833155}}]}
+  }, {
     route: 'Dining',
     title: 'Dining',
-    image: 'https://www.windermereusa.org/wp-content/uploads/2013/09/LakeViewfront1-905x452.jpg',
+    image: 'dining.jpg',
     items:[
-      {header:'Address', body:
-      "1650 Koehler Dr.\nRoach, MO 65787"},
+      {header:'Choices', body:
+      "We have three great dining opportunities for your group: regular buffet service dining, catered meals, and the Lakeside Grill."},
       {header:'Buffet Style', body:"Buffet dining includes an entree, several side dishes, a soup of the day, a salad bar with a wide variety of toppings and dressings, assorted desserts, and beverage center (juices, coffee, tea, and soda) at lunch and dinner. Meals are served in the main dining room. Breakfasts include hot breakfast entrees, side dishes, beverage center, plus assorted cereals, yogurt, & fruit."},
+      {header:'Meal Times', body:
+      "Breakfast: 7:30-8:30am\nLunch: 12:00-1:00pm\nDinner: 5:30-6:30pm"},
       {header:'Catering Services', body:"We want to help you get the most out of your retreat fellowship times. Let us handle preparing snacks and all the set-up and clean up associated so you can focus on ministering to your attendees, so don't forget about our extensive snack list! One of our more popular events is a breakfast brunch for your group served in a separate section of our dining hall. Whether you're a local group looking for catering services or staying in our lodging, we can meet your catering need."},
       {header:'Lakeside Grill', body:"The Lakeside Grill is serving up items hot off the grill, appetizers, and cool treats from the ice cream freezer. \nGroups can arrange parties, snack packages, or times for the cafe to be open for individual pay out of pocket orders. \nThe Lakeside Grill's fun atmosphere create a great opportunity for guests to build relationships. \nThe grill and Marina patio is a great spot to take in a movie with your whole group in a laid back, casual setting. It works well for small group meetings and fellowship times. \nThe grill is also equipped with WiFi!"}],
      map:{
@@ -63,24 +163,15 @@ export const screens = [
               longitude:-92.837198,
             },
           },{
-            title: "Snack Shack",
+            title: "Lakeside Grill",
             coordinate: {
               latitude: 38.033315,
               longitude: -92.837141,
             }}]}
-  },{
-    route: 'Contact',
-    title: 'Contact Us',
-    image: 'https://www.windermereusa.org/wp-content/uploads/2013/09/LakeViewfront1-905x452.jpg',
-    items:[
-      {header:'Address', body:
-      "1650 Koehler Dr.\nRoach, MO 65787"},
-      {header:'Phone', body:"573-346-5200"},
-      {header:'Email', body:"sales@windermereusa.org"}]
-  },{
+  }, {
     route: 'Recreation',
     title: 'Recreation',
-    image: 'https://www.windermereusa.org/wp-content/uploads/2018/03/All-4-Logos-horizontal-2-1024x353.png',
+    image: 'recreation.png',
     items:[
       {header:'Activities', body:'We offer many recreation options.'}],
     links:[
@@ -89,10 +180,19 @@ export const screens = [
       {text:'The Forest', route:'Forest'},
       {text:'The Splash', route:'Splash'},
       {text:'The Marina', route:'Marina'}]
-  },{
+  }, {
+    route: 'ContactUS',
+    title: 'Contact Us',
+    image: 'contact.jpg',
+    items:[
+      {header:'Address', body:
+      "1650 Koehler Dr.\nRoach, MO 65787"},
+      {header:'Phone', body:"573-346-5200"},
+      {header:'Email', body:"sales@windermereusa.org"}]
+  }, {
     route: 'Cave',
     title: 'The Cave',
-    image: 'https://www.windermereusa.org/wp-content/uploads/2014/02/Cave2008.jpg',
+    image: 'cave.jpg',
     items:[
       {header:'When', body:'Monday-Saturday'},
       {header:'Where', body:'Meet at the entrance of the cave'},
@@ -118,7 +218,7 @@ export const screens = [
   },{
     route: 'Edge',
     title: 'The Edge',
-    image: 'https://www.windermereusa.org/wp-content/uploads/2014/02/highs_11.jpg',
+    image: 'edge.jpg',
     items: [
       {header:'When', body:'Monday-Saturday'},
       {header:'Where', body:'Recreation Climbs meet 10 minutes before scheduled time at The Edge'},
@@ -142,7 +242,7 @@ export const screens = [
   },{
     route: 'Forest',
     title: 'The Forest',
-    image: 'https://www.windermereusa.org/wp-content/uploads/2014/02/IMG_1001-768x1024.jpg',
+    image: 'forest.jpg',
     items: [
       {header:'When', body:'By reservation.'},
       {header:'Where', body:'Games are held at The Forest.'},
@@ -165,7 +265,7 @@ export const screens = [
   },{
     route: 'Splash',
     title: 'The Splash',
-    image: 'https://www.windermereusa.org/wp-content/uploads/2014/01/IMG_4246edit.jpg',
+    image: 'splash.jpg',
     items: [
       {header:'When', body:'Monday-Saturday during summer season.'},
       {header:'Where', body:'Participants meet at the boat house on the dock.'},
@@ -181,7 +281,7 @@ export const screens = [
         latitudeDelta: 0.0080,
         longitudeDelta: 0.0080},
       markers:[
-        { title: "The Forest",
+        { title: "The Splash",
           description: "",
           coordinate: {
             latitude: 38.0334189,
@@ -189,7 +289,7 @@ export const screens = [
   },{
     route: 'Marina',
     title: 'The Marina',
-    image: 'https://www.windermereusa.org/wp-content/uploads/2014/02/2013-05-29-043.jpg',
+    image: 'marina.jpg',
     items: [
       {header:'When', body:'Monday-Saturday during summer season.'},
       {header:'Where', body:'Rentals meet at the boat house on the dock.'},
@@ -204,19 +304,12 @@ export const screens = [
         latitudeDelta: 0.0080,
         longitudeDelta: 0.0080},
       markers:[
-        { title: "The Forest",
+        { title: "The Marina",
           description: "",
           coordinate: {
             latitude: 38.0332049,
             longitude: -92.8356746}}]}
-  },{
-    route: 'Contact',
-    title: 'Contact Us',
-    image: 'marina.jpg',
-    items: [
-      {header:'When', body:'Monday-Saturday during summer season.'},
-      {header:'Where', body:'Rentals meet at the boat house on the dock.'},
-      {header:'How', body:'Schedule and purchase tickts for Rentals at the dock.'}]}
+  }
 ]
 
 export function findScreenByRoute(route){
