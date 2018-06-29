@@ -2,16 +2,16 @@ import React from "react"
 import { Image, Dimensions } from "react-native"
 import { Container, Card, CardItem, Body, Content, Header, Left, Right, Icon,
   Title, Button, Text } from "native-base"
-import { screens, findScreenByRoute } from '../../data/contents.js'
+import { findScreenByRoute } from '../common'
+import { connect } from 'react-redux'
 
 const dimensions = Dimensions.get('window')
 const imageHeight = dimensions.height/5
 
-export default class Accommodations extends React.Component {
+class Accommodations extends React.Component {
   render() {
-    const {params} = this.props.navigation.state
-    const screen = params
-
+    let screen = findScreenByRoute(this.props.screens, 'Accommodations')
+    console.log(screen)
     return (
       <Container>
         <Header>
@@ -55,3 +55,11 @@ export default class Accommodations extends React.Component {
     )
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    screens: state.screens
+  }
+}
+
+export default connect(mapStateToProps)(Accommodations)

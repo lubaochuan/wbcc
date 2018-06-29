@@ -1,32 +1,30 @@
-import React, { Component } from "react"
-import HomeScreen from "./screens/HomeScreen.js"
-import Accommodations from "./screens/Accommodations.js"
-import MapScreen from "./screens/MapScreen.js"
-import Dining from "./screens/Dining.js"
-import Recreation from "./screens/Recreation.js"
-import DetailScreen from "./screens/DetailScreen.js"
-import CampusMap from "./screens/CampusMap.js"
-import Policies from "./screens/Policies.js"
-import Contact from "./screens/Contact.js"
+import 'expo'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { watchScreensData } from './../redux/app-redux'
+import AppNavigator from "./AppNavigator"
 
-import { createDrawerNavigator, createStackNavigator } from "react-navigation"
-
-const AppNavigator = createStackNavigator(
-  {
-    Home: { screen: HomeScreen },
-    Accommodations: { screen: Accommodations },
-    MapScreen: { screen: MapScreen },
-    Dining: { screen: Dining },
-    Recreation: { screen: Recreation },
-    DetailScreen: { screen: DetailScreen },
-    CampusMap: { screen: CampusMap },
-    Policies: { screen: Policies },
-    Contact: { screen: Contact }
-  },
-  {
-    initialRouteName: "Home",
-    headerMode: "none"
+class Container extends Component {
+  constructor(props) {
+    super(props)
+    this.props.watchScreensData()
   }
-)
 
-export default AppNavigator
+  render() {
+    return <AppNavigator />
+  }
+}
+
+const mapStateToProps = state => {
+  return {
+    screens: state.screens
+  }
+}
+
+const mapDispatchToProps = dispatch =>{
+  return {
+    watchScreensData: () => dispatch(watchScreensData())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Container)

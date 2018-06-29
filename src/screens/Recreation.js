@@ -1,17 +1,17 @@
-import React from "react"
-import { Image, Dimensions } from "react-native"
+import React from 'react'
+import { Image, Dimensions } from 'react-native'
 import { Container, Card, CardItem, Body, Content, Header, Left, Right, Icon,
-  Title, Button, Text, List, ListItem } from "native-base"
-import {screens, findScreenByRoute} from '../../data/contents.js'
+  Title, Button, Text, List, ListItem } from 'native-base'
+import { findScreenByRoute } from '../common'
+import { connect } from 'react-redux'
 
 const dimensions = Dimensions.get('window')
 // set height to 20% (1/5) of screen height
 const imageHeight = dimensions.height/5
 
-export default class Recreation extends React.Component {
+class Recreation extends React.Component {
   render() {
-    let screen = findScreenByRoute('Recreation')
-    console.log(JSON.stringify(screen.links))
+    let screen = findScreenByRoute(this.props.screens, 'Recreation')
 
     return (
       <Container>
@@ -43,7 +43,7 @@ export default class Recreation extends React.Component {
           {screen.links.map((link, index) => (
           <Button full iconRight key={index}
             style={{ marginTop: 10 }}
-            onPress={() => this.props.navigation.navigate("DetailScreen", findScreenByRoute(link.route))}>
+            onPress={() => this.props.navigation.navigate("DetailScreen", link.route)}>
             <Text>{link.text}</Text>
             <Icon active name="arrow-forward" />
           </Button>))}
@@ -52,3 +52,11 @@ export default class Recreation extends React.Component {
     )
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    screens: state.screens
+  }
+}
+
+export default connect(mapStateToProps)(Recreation)

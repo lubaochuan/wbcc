@@ -1,13 +1,13 @@
-import React from "react"
+import React from 'react'
 import { Container, Card, CardItem, Body, Content, Header, Left, Right, Icon,
-  Title, Button, Text, View } from "native-base"
-import { MapView } from "expo"
+  Title, Button, Text, View } from 'native-base'
+import { MapView } from 'expo'
 
 export default class MapScreen extends React.Component {
   render() {
-    const {params} = this.props.navigation.state
-    //console.log(JSON.stringify(params))
-
+    const map = this.props.navigation.state.params
+    //console.log(JSON.stringify(map))
+    //console.log(JSON.stringify(this.props.navigation.state))
     return (
       <Container>
         <Header>
@@ -25,11 +25,11 @@ export default class MapScreen extends React.Component {
         </Header>
         <View style={{flex: 1}}>
         <MapView
-          initialRegion={params.initialRegion}
+          initialRegion={map.initialRegion}
           showsUserLocation={true}
           style={{flex: 1}}
           mapType='hybrid'>
-          {params.markers.map((marker, index) =>
+          {map.markers.map((marker, index) =>
           <MapView.Marker
             key={index}
             coordinate={marker.coordinate}

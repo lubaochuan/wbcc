@@ -1,13 +1,14 @@
-import React from "react"
-import { Dimensions } from "react-native"
+import React from 'react'
+import { Dimensions } from 'react-native'
 import { Container, Card, CardItem, Body, Content, Header, Left, Right, Icon,
-  Title, Button, Text } from "native-base"
-import {screens} from '../../data/contents.js'
+  Title, Button, Text } from 'native-base'
+import { findScreenByRoute } from '../common'
+import { connect } from 'react-redux'
 
-export default class DetailScreen extends React.Component {
+class DetailScreen extends React.Component {
   render() {
-    const {params} = this.props.navigation.state
-    const screen = params
+    const route = this.props.navigation.state.params
+    let screen = findScreenByRoute(this.props.screens, route)
 
     return (
       <Container>
@@ -45,3 +46,11 @@ export default class DetailScreen extends React.Component {
     )
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    screens: state.screens
+  }
+}
+
+export default connect(mapStateToProps)(DetailScreen)

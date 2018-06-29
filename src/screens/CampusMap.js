@@ -2,21 +2,19 @@ import React from "react"
 import { Container, Card, CardItem, Body, Content, Header, Left, Right, Icon,
   Title, Button, Text, View } from "native-base"
 import { MapView } from "expo"
-import {screens} from '../../data/contents.js'
+import { findScreenByRoute } from '../common'
+import { connect } from 'react-redux'
 
-export default class CampusMap extends React.Component {
-  constructor(){
-    super()
+class CampusMap extends React.Component {
+  render() {
     // find screens with map info
-    let screens_w_map = screens.filter((screen)=>screen.map)
+    let screens_w_map = this.props.screens.filter((screen)=>screen.map)
     this.initialRegion = screens_w_map[0].map.initialRegion
 
     // extract markers into an array
     let markers_arrays = screens_w_map.map((obj)=>obj.map.markers)
     this.markers = [].concat.apply([], markers_arrays)
-  }
 
-  render() {
     return (
       <Container>
         <Header>
@@ -50,3 +48,11 @@ export default class CampusMap extends React.Component {
       </Container>)
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    screens: state.screens
+  }
+}
+
+export default connect(mapStateToProps)(CampusMap)

@@ -9,7 +9,7 @@ export const screens = [
       {text:'Accommodations', route:'Accommodations'},
       {text:'Dining', route:'Dining'},
       {text:'Recreation', route:'Recreation'},
-      {text:'Campus Map', route:'CampusMap'},
+      {text:'CampusMap', route:'CampusMap'},
       {text:'Guest Policies', route:'Policies'},
       {text:'Contact Us', route:'Contact'}
     ]

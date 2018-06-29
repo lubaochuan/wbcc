@@ -1,0 +1,655 @@
+{
+  "screens": {
+    "A":{
+      "route": "Home",
+      "title": "Home",
+      "image": "cover.jpg",
+      "items": {
+        "A":{
+          "header": "Welcome to Windermere Baptist Conference Center",
+          "body": "We provide a Christian setting in which life changing experiences may occur."
+        }
+      },
+      "links": {
+        "A":{
+          "text": "Accommodations",
+          "route": "Accommodations"
+        },
+        "B":{
+          "text": "Dining",
+          "route": "Dining"
+        },
+        "C":{
+          "text": "Recreation",
+          "route": "Recreation"
+        },
+        "D":{
+          "text": "Campus Map",
+          "route": "CampusMap"
+        },
+        "E":{
+          "text": "Guest Policies",
+          "route": "Policies"
+        },
+        "F":{
+          "text": "Contact Us",
+          "route": "Contact"
+        }
+      }
+    },
+    "B":{
+      "route": "Accommodations",
+      "title": "Accommodations",
+      "image": "accomodations.jpg",
+      "items": {
+        "A":{
+          "header": "Deluxe, Standard, and Economy Lodging",
+          "body": "Windermere offers a wide range of lodging options to meet the variety of needs of our guests.  All lodging and conference facilities are air conditioned and heated.  All lodging has bathroom facilities within the building and handicap accessible lodging is available as well."
+        },
+        "B":{
+          "header": "Conference Spaces",
+          "body": "We also offer a broad range of conference space options! \nContact us or visit our site for more information!"
+        }
+      },
+      "map": {
+        "initialRegion": {
+          "latitude": 38.032692,
+          "longitude": -92.83801,
+          "latitudeDelta": 0.008,
+          "longitudeDelta": 0.008
+        },
+        "markers": {
+          "A":{
+            "title": "Wilderness Creek Dorms",
+            "coordinate": {
+              "latitude": 38.03379,
+              "longitude": -92.8477
+            }
+          },
+          "B":{
+            "title": "Tent Area",
+            "coordinate": {
+              "latitude": 38.02877,
+              "longitude": -92.83866
+            }
+          },
+          "C":{
+            "title": "Motel",
+            "coordinate": {
+              "latitude": 38.032043,
+              "longitude": -92.837654
+            }
+          },
+          "D":{
+            "title": "Spring Valley Dorms",
+            "coordinate": {
+              "latitude": 38.035133,
+              "longitude": -92.84361
+            }
+          },
+          "E":{
+            "title": "Cedar Grove Cottages",
+            "coordinate": {
+              "latitude": 38.030025,
+              "longitude": -92.838486
+            }
+          },
+          "F":{
+            "title": "Family Cabins",
+            "coordinate": {
+              "latitude": 38.03537,
+              "longitude": -92.83492
+            }
+          },
+          "G":{
+            "title": "Lake View Dorms",
+            "coordinate": {
+              "latitude": 38.03588,
+              "longitude": -92.83768
+            }
+          },
+          "H":{
+            "title": "RV Park",
+            "coordinate": {
+              "latitude": 38.028755,
+              "longitude": -92.83962
+            }
+          },
+          "I":{
+            "title": "Lake View Lodge",
+            "coordinate": {
+              "latitude": 38.03517,
+              "longitude": -92.83917
+            }
+          },
+          "J":{
+            "title": "Lake View Conf. Bldg.",
+            "coordinate": {
+              "latitude": 38.035347,
+              "longitude": -92.83987
+            }
+          },
+          "K":{
+            "title": "Deer Ridge Conf. Bldg.",
+            "coordinate": {
+              "latitude": 38.03536,
+              "longitude": -92.84103
+            }
+          },
+          "L":{
+            "title": "Koehler Lodge",
+            "coordinate": {
+              "latitude": 38.034748,
+              "longitude": -92.84227
+            }
+          },
+          "M":{
+            "title": "Dogwood Lodge/Murdock Conf. Room",
+            "coordinate": {
+              "latitude": 38.037216,
+              "longitude": -92.83946
+            }
+          },
+          "N":{
+            "title": "Red Bud Lodge",
+            "coordinate": {
+              "latitude": 38.036644,
+              "longitude": -92.83938
+            }
+          },
+          "O":{
+            "title": "Wilderness Creek Auditorium",
+            "coordinate": {
+              "latitude": 38.034714,
+              "longitude": -92.84506
+            }
+          },
+          "P":{
+            "title": "Multi-purpose Building",
+            "coordinate": {
+              "latitude": 38.030495,
+              "longitude": -92.83708
+            }
+          },
+          "Q":{
+            "title": "Harding Auditorium",
+            "coordinate": {
+              "latitude": 38.031734,
+              "longitude": -92.837166
+            }
+          },
+          "R":{
+            "title": "Spring Valley Auditorium",
+            "coordinate": {
+              "latitude": 38.034306,
+              "longitude": -92.842865
+            }
+          },
+          "S":{
+            "title": "Cedar Grove Conference Building #1",
+            "coordinate": {
+              "latitude": 38.02902,
+              "longitude": -92.839226
+            }
+          },
+          "T":{
+            "title": "Cedar Grove Conference Building #2",
+            "coordinate": {
+              "latitude": 38.029957,
+              "longitude": -92.83944
+            }
+          },
+          "U":{
+            "title": "Educational Building",
+            "coordinate": {
+              "latitude": 38.03092,
+              "longitude": -92.83829
+            }
+          },
+          "V":{
+            "title": "Prayer Chapel",
+            "coordinate": {
+              "latitude": 38.032135,
+              "longitude": -92.83315
+            }
+          }
+        }
+      }
+    },
+    "C":{
+      "route": "Dining",
+      "title": "Dining",
+      "image": "dining.jpg",
+      "items": {
+        "A":{
+          "header": "Choices",
+          "body": "We have three great dining opportunities for your group: regular buffet service dining, catered meals, and the Lakeside Grill."
+        },
+        "B":{
+          "header": "Buffet Style",
+          "body": "Buffet dining includes an entree, several side dishes, a soup of the day, a salad bar with a wide variety of toppings and dressings, assorted desserts, and beverage center (juices, coffee, tea, and soda) at lunch and dinner. Meals are served in the main dining room. Breakfasts include hot breakfast entrees, side dishes, beverage center, plus assorted cereals, yogurt, & fruit."
+        },
+        "C":{
+          "header": "Meal Times",
+          "body": "Breakfast: 7:30-8:30am\nLunch: 12:00-1:00pm\nDinner: 5:30-6:30pm"
+        },
+        "D":{
+          "header": "Catering Services",
+          "body": "We want to help you get the most out of your retreat fellowship times. Let us handle preparing snacks and all the set-up and clean up associated so you can focus on ministering to your attendees, so don't forget about our extensive snack list! One of our more popular events is a breakfast brunch for your group served in a separate section of our dining hall. Whether you're a local group looking for catering services or staying in our lodging, we can meet your catering need."
+        },
+        "E":{
+          "header": "Lakeside Grill",
+          "body": "The Lakeside Grill is serving up items hot off the grill, appetizers, and cool treats from the ice cream freezer. \nGroups can arrange parties, snack packages, or times for the cafe to be open for individual pay out of pocket orders. \nThe Lakeside Grill's fun atmosphere create a great opportunity for guests to build relationships. \nThe grill and Marina patio is a great spot to take in a movie with your whole group in a laid back, casual setting. It works well for small group meetings and fellowship times. \nThe grill is also equipped with WiFi!"
+        }
+      },
+      "map": {
+        "initialRegion": {
+          "latitude": 38.032692,
+          "longitude": -92.83801,
+          "latitudeDelta": 0.008,
+          "longitudeDelta": 0.008
+        },
+        "markers": {
+          "A":{
+            "title": "Dining Hall",
+            "coordinate": {
+              "latitude": 38.03277,
+              "longitude": -92.8372
+            }
+          },
+          "B":{
+            "title": "Lakeside Grill",
+            "coordinate": {
+              "latitude": 38.033314,
+              "longitude": -92.83714
+            }
+          }
+        }
+      }
+    },
+    "D":{
+      "route": "Recreation",
+      "title": "Recreation",
+      "image": "recreation.png",
+      "items": {
+        "A":{
+          "header": "Activities",
+          "body": "We offer many recreation options."
+        }
+      },
+      "links": {
+        "A":{
+          "text": "The Cave",
+          "route": "Cave"
+        },
+        "B":{
+          "text": "The Edge",
+          "route": "Edge"
+        },
+        "C":{
+          "text": "The Forest",
+          "route": "Forest"
+        },
+        "D":{
+          "text": "The Splash",
+          "route": "Splash"
+        },
+        "E":{
+          "text": "The Marina",
+          "route": "Marina"
+        }
+      }
+    },
+    "E":{
+      "route": "Contact",
+      "title": "Contact Us",
+      "image": "contact.jpg",
+      "items": {
+        "A":{
+          "header": "Address",
+          "body": "1650 Koehler Dr.\nRoach, MO 65787"
+        },
+        "B":{
+          "header": "Phone",
+          "body": "573-346-5200"
+        },
+        "C":{
+          "header": "Email",
+          "body": "sales@windermereusa.org"
+        }
+      }
+    },
+    "F":{
+      "route": "Cave",
+      "title": "The Cave",
+      "image": "cave.jpg",
+      "items": {
+        "A":{
+          "header": "When",
+          "body": "Monday-Saturday"
+        },
+        "B":{
+          "header": "Where",
+          "body": "Meet at the entrance of the cave"
+        },
+        "C":{
+          "header": "Where",
+          "body": "Meet at the entrance of the cave"
+        },
+        "D":{
+          "header": "How",
+          "body": "Schedule and purchase tickets at the Front Desk"
+        },
+        "E":{
+          "header": "Duration",
+          "body": "Approximately 90 minutes"
+        },
+        "F":{
+          "header": "Do-It-Yourself Tour",
+          "body": "The first 350 feet of Windermere's cave is open 24/7 for you to explore on your own. Our path is completely paved and partially lighted to allow you a wonderful experience as you walk."
+        },
+        "G":{
+          "header": "What do I bring?",
+          "body": "Bring clothes that you don't mind getting a little dirty. We will provide flashlights for all Beyond the Gate tours."
+        }
+      },
+      "map": {
+        "initialRegion": {
+          "latitude": 38.032692,
+          "longitude": -92.83801,
+          "latitudeDelta": 0.008,
+          "longitudeDelta": 0.008
+        },
+        "markers": {
+          "A":{
+            "title": "The cave",
+            "description": "",
+            "coordinate": {
+              "latitude": 38.031338,
+              "longitude": -92.83791
+            }
+          }
+        }
+      }
+    },
+    "G":{
+      "route": "Edge",
+      "title": "The Edge",
+      "image": "edge.jpg",
+      "items": {
+        "A":{
+          "header": "When",
+          "body": "Monday-Saturday"
+        },
+        "B":{
+          "header": "Where",
+          "body": "Recreation Climbs meet 10 minutes before scheduled time at The Edge"
+        },
+        "C":{
+          "header": "How",
+          "body": "Schedule and purchase tickets at The Barn"
+        },
+        "D":{
+          "header": "Duration",
+          "body": "Recreation Climbs are 1 hour long"
+        },
+        "E":{
+          "header": "Recreation Climbs",
+          "body": "During your hour of free climb time you could experience flying down our zip lines or even leap into nothingness on our Leap of Faith. Our staff are fully trained and certified to ACCT Standards and have the experience to match. Our open elements may change from day to day resulting in the possibility of having a different experience each day."
+        },
+        "F":{
+          "header": "Private Sessions",
+          "body": "Are you looking for something that is more group oriented? We have the perfect solution for you, a Private Session! Our staff will work one-on-one with you to help design the perfect program for what you are wanting to do. Private Sessions are typically 3 to 8 hours, but we can adjust that to meet your groups needs."
+        }
+      },
+      "map": {
+        "initialRegion": {
+          "latitude": 38.033382,
+          "longitude": -92.85082,
+          "latitudeDelta": 0.008,
+          "longitudeDelta": 0.008
+        },
+        "markers": {
+          "A":{
+            "title": "The Edge",
+            "description": "",
+            "coordinate": {
+              "latitude": 38.033382,
+              "longitude": -92.85082
+            }
+          }
+        }
+      }
+    },
+    "H":{
+      "route": "Forest",
+      "title": "The Forest",
+      "image": "forest.jpg",
+      "items": {
+        "A":{
+          "header": "When",
+          "body": "By reservation."
+        },
+        "B":{
+          "header": "Where",
+          "body": "Games are held at The Forest."
+        },
+        "C":{
+          "header": "How",
+          "body": "Reservations can be made with your event planner."
+        },
+        "D":{
+          "header": "Duration",
+          "body": "Games are 1 hour long."
+        },
+        "E":{
+          "header": "Fees",
+          "body": "$11 per person. Fee includes your equipment rental, a stash of ammo and use of the course for an hour."
+        },
+        "F":{
+          "header": "Release Form",
+          "body": "The FOREST participants must submit a release for signed by parents if participant is under 18 which is available on the Windermere website."
+        }
+      },
+      "map": {
+        "initialRegion": {
+          "latitude": 38.033085,
+          "longitude": -92.850815,
+          "latitudeDelta": 0.008,
+          "longitudeDelta": 0.008
+        },
+        "markers": {
+          "A":{
+            "title": "The Forest",
+            "description": "",
+            "coordinate": {
+              "latitude": 38.033085,
+              "longitude": -92.850815
+            }
+          }
+        }
+      }
+    },
+    "I":{
+      "route": "Splash",
+      "title": "The Splash",
+      "image": "splash.jpg",
+      "items": {
+        "A":{
+          "header": "When",
+          "body": "Monday-Saturday during summer season."
+        },
+        "B":{
+          "header": "Where",
+          "body": "Participants meet at the boat house on the dock."
+        },
+        "C":{
+          "header": "How",
+          "body": "Schedule and purchase tickets for the inflatables at the dock."
+        },
+        "D":{
+          "header": "Duration",
+          "body": "The inflatables are in 30 minute sessions."
+        },
+        "E":{
+          "header": "The Inflatables",
+          "body": "Ready to get wet while having a blast? Jump into our Inflatable Waterpark! With a wide variety of water trampolines, icebergs, and water tots, it is fun for the whole family. Our waterpark is under the close supervision of our American Red Cross certified Lifeguards. All participants must wear a provided life vest."
+        },
+        "F":{
+          "header": "What do I bring?",
+          "body": "Bring modest, one piece swimwear and a towel. Life vests are provided."
+        }
+      },
+      "map": {
+        "initialRegion": {
+          "latitude": 38.03342,
+          "longitude": -92.836555,
+          "latitudeDelta": 0.008,
+          "longitudeDelta": 0.008
+        },
+        "markers": {
+          "A":{
+            "title": "The Splash",
+            "description": "",
+            "coordinate": {
+              "latitude": 38.03342,
+              "longitude": -92.836555
+            }
+          }
+        }
+      }
+    },
+    "J":{
+      "route": "Marina",
+      "title": "The Marina",
+      "image": "marina.jpg",
+      "items": {
+        "A":{
+          "header": "When",
+          "body": "Monday-Saturday during summer season."
+        },
+        "B":{
+          "header": "Where",
+          "body": "Rentals meet at the boat house on the dock."
+        },
+        "C":{
+          "header": "How",
+          "body": "Schedule and purchase tickts for Rentals at the dock."
+        },
+        "D":{
+          "header": "Duration",
+          "body": "Rentals are in 30 minute sessions."
+        },
+        "E":{
+          "header": "Rentals & Marina Services",
+          "body": "See Windermere Cove from a whole new perspective. We offer many different types of boats for rent including canoes and kayaks! Want to bring your boat? We have a full service marina available with over 40 boat slips. Need fuel? We got you covered! Out of bait? We got you covered! Fishermen - when you have caught your limit we have a fish cleaning station located on our dock."
+        },
+        "F":{
+          "header": "What do I bring?",
+          "body": "Bring modest, one piece swimwear and a towel. Life vests are provided."
+        }
+      },
+      "map": {
+        "initialRegion": {
+          "latitude": 38.033203,
+          "longitude": -92.83568,
+          "latitudeDelta": 0.008,
+          "longitudeDelta": 0.008
+        },
+        "markers": {
+          "A":{
+            "title": "The Marina",
+            "description": "",
+            "coordinate": {
+              "latitude": 38.033203,
+              "longitude": -92.83568
+            }
+          }
+        }
+      }
+    },
+    "K":{
+      "route": "Policies",
+      "title": "Policies",
+      "image": "policy.jpg",
+      "items": {
+        "A":{
+          "header": "Guest Rules and Policies",
+          "body": "The policies relate to individual responsibilities. The Conference Coordinator is responsible for communicating and maintaining compliance with these policies within their group."
+        },
+        "B":{
+          "header": "Alcohol",
+          "body": "Use or possession of alcoholic beverages or illicit drugs is forbidden. Guests in non-compliance will be asked to leave, will forfeit any right to refund, and may jeopardize the invitation of their group to return to Windermere."
+        },
+        "C":{
+          "header": "Campfire",
+          "body": "Campfires should be scheduled in advance of your conference. Campfires are located in the Vesper area, Cedar Grove, Lake View, and Spring Valley. Windermere can set the firewood; however, the groups will be responsible for lighting the fire. Groups may also provide their own firewood if approved by the Account Manager. Contact the Account Manager ot make arrangements."
+        },
+        "D":{
+          "header": "Curfew",
+          "body": "There is a 12:30 AM curfew. All guests, including sponsors, need to be in their rooms by this time.\nQuiet time begins at 12:00 AM."
+        },
+        "E":{
+          "header": "Dress",
+          "body": "Clothing will be modest and appropriate for a family atmosphere. Shorts, skirts, or dresses that are extremely short are inappropriate. All females' swimsuits MUST BE ONE PIECE or have a cover worn over them at all times. All males' swimsuits must be trunk type; no Speedo type swimsuits are allowed. Violations of this dress policy by guests will be addressed through consultation with group's leader(s)."
+        },
+        "F":{
+          "header": "Firearms",
+          "body": "Firearms and fireworks of any nature are forbidden."
+        },
+        "G":{
+          "header": "Food & Drink",
+          "body": "No food or drink is allowed inside of Harding Auditorium or the Gymnasium of the Multi-Purpose Building."
+        },
+        "H":{
+          "header": "Lake/Swimming",
+          "body": "NO SWIMMING IN THE LAKE EXCEPT IN DESIGNATED SWIMMING AREAS. The ski beach is to facilitate skiers in having easy access to the water. Skiers using this area should be cautious."
+        },
+        "I":{
+          "header": "Lost & Found",
+          "body": "Items that are found in the buildings or on the grounds are placed in lost-and-found. Please contact the Front Desk concerning lost and found items."
+        },
+        "J":{
+          "header": "Medical",
+          "body": "Windermere staff must be notified of all medical incidents that occur on the premises.\nFor secondary reinbursement by Windermere for any medical incidents, please contact the Account Manager. The guest is responsible for providing evidence of any and all applicable insurance to the medical provider. Once the guest's insurance company has paid the medical provider, the guest must provide an explanation of benefits from the insurance company to Windermere."
+        },
+        "K":{
+          "header": "Mail",
+          "body": "Mail is available for pickup after 12:00 PM. All mail needs to include the guest's name and name of the camp/conference the guest is attending. Any mail received after the group ahs departed will be marked to return to sender."
+        },
+        "L":{
+          "header": "Pets",
+          "body": "ABSOLUTELY NO PETS ARE ALLOWED ON THE GROUNDS, except within the RV Park boundaries. Guests having pets outside the RV Park boundaries will be asked to take their pets off site or vacate the grounds."
+        },
+        "M":{
+          "header": "Photography",
+          "body": "Please note that a Windermere Staff or photographer may be on site taking pictures of events and activities at Windermere. These photographs may be used on our web site, social media, and in promotional materials."
+        },
+        "N":{
+          "header": "Reservations",
+          "body": "If individuals and/or individual families are to make their own reservations for this event, then Windermere Reservations will require an individual/family deposit to be made consisting of $10.00 per night per person or per family for each unit reserved. Cancellation 30 or more days prior to arrival date will result in a full refund of the individual deposit; cancellation less than 30 days prior will result in forfeiture of the individual deposit. No reservations for a conference will be processed until we have received the signed contract and deposit.\nReservations can only be made or modified by the guest occupying the lodging room. Exceptions to the policy will only be made if the person requesting the change/room is paying for the room."
+        },
+        "O":{
+          "header": "Rollerblades",
+          "body": "Rollerblades, skateboarding, bikes, and scooters are allowed on the pool side of the lake only. Due to high traffic, non are allowed on teh office side of the lake. Full pads and helmet must be worn. Windermere Staff may ask guests to refrain from the use of the above mentioned if being used in an unsafe manner."
+        },
+        "P":{
+          "header": "RVs",
+          "body": "Campers, motor homes, and trailers may not be used as sleeping quarters when parked anywhere other than in the RV lots. No automobile (car, truck, van, etc.) may be used as sleeping quarters."
+        },
+        "Q":{
+          "header": "Smoking",
+          "body": "Smoking is not permitted within any Windermere buildings. Guests 18 or older are permitted to smoke outside. Violation of this policy will result in a charge."
+        },
+        "R":{
+          "header": "Trash",
+          "body": "There will be an additional cleaning charge resulting from any trash left in hallways or lobby areas of campus. There will be no charge for trash found in designated trash receptacles."
+        },
+        "S":{
+          "header": "Vehicles",
+          "body": "Observe speed limit signs. All passengers must be inside the vehicle in accordance with state highway traffic laws."
+        }
+      }
+    }
+  }
+}
